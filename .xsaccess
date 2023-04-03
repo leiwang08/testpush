@@ -1,21 +1,20 @@
 {
-     "exposed" : true,  
-                  
-     "authentication" :                                            
-            {
-               "method": "Form"   
-            },
-  
-     "cache_control" : "must-revalidate", 
+    "exposed": true,
+    "authentication": [{
+        "method": "Form"
+    }],
 
-     "cors" :                      
-            {
-             "enabled" : false
-            }, 
-                     
-     "enable_etags" : false,
-
-     "force_ssl" : false,
-     
-     "prevent_xsrf" : true
+    "mime_mapping": [{
+        "extension": "jpg",
+        "mimetype": "image/jpeg"
+    }],
+    "force_ssl": false,
+    "enable_etags": true,
+    "prevent_xsrf": true,
+    "anonymous_connection": null,
+    "cors": [{
+        "enabled": false
+    }],
+    "cache_control": "no-cache, no-store",
+    "default_file": "index.html"
 }
